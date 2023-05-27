@@ -1,0 +1,26 @@
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\appsettings.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.staticwebassets.runtime.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.exe
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.deps.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.runtimeconfig.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.dll
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\ref\HarborView Inn.dll
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\bin\Debug\net6.0\HarborView Inn.pdb
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.AssemblyInfoInputs.cache
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.AssemblyInfo.cs
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.csproj.CoreCompileInputs.cache
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.RazorAssemblyInfo.cache
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.RazorAssemblyInfo.cs
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\scopedcss\bundle\HarborView Inn.styles.css
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\scopedcss\projectbundle\HarborView Inn.bundle.scp.css
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.dll
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\ref\HarborView Inn.dll
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.pdb
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.genruntimeconfig.cache
+C:\Users\uzair\OneDrive\Desktop\Semester 6\Web\HarborView Inn\HarborView Inn\obj\Debug\net6.0\HarborView Inn.csproj.AssemblyReference.cache
