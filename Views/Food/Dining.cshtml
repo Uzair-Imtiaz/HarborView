@@ -1,4 +1,9 @@
-﻿      <!-- Icons -->
+﻿@{
+    var x = "Dining";
+}  
+
+
+<!-- Icons -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -12,13 +17,7 @@
       <!-- Tailwind CDN -->
       <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-      <!-- Banner Section -->
-      <section class="banner" style="height: 85vh;">
-         <div class="content">
-            <div class="title">Dining</div>
-            <div class="top-subtitle subtitle">The Glory Hotels</div>
-         </div>
-      </section>
+      <partial name="_partialView" model="x"/>
 
       <!-- Dining Section -->
       <h1 class="sec-head" style="text-align: center; margin-top: 100px;">Taste the difference</h1>

@@ -216,3 +216,17 @@ input:focus {
 	width: auto;
 	margin: 20px
 }
+
+
+
+.message, .Alert1 , .Cook{
+	font-size: 30px;
+	margin-top: 40px;
+	text-align: center;
+	color:black;
+}
+
+.invalid,.invalid-field{
+	color:red;
+	padding:0px 30px;
+}
