@@ -13,8 +13,9 @@ form {
 	flex-direction: column;
 	align-items: flex-start;
 	padding-bottom: 20px;
-	width: 400px;
-	border-radius: 10px
+	width: 500px;
+	border-radius: 10px;
+	height: fit-content;
 }
 
 form h4 {

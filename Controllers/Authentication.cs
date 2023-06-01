@@ -54,26 +54,32 @@ namespace HarborView_Inn.Controllers
         }
 
         [HttpPost]
-        public IActionResult SignUp(string Email,string Password)
+        public IActionResult SignUp(string Name, string Email,string Password, string Confirm_Password)
         {
             // if any parameter is null return error 
-            if (Email == null || Password == null)
+            if (Email == null || Password == null || Name == null)
             {
-                ViewBag.r = "You Left One of the Field Empty !!";
+                ViewBag.r = "All Fields are required!";
                 return View();
             }
+            if (!Password.Equals(Confirm_Password))
+            {
+                ViewBag.PassNotMatchError = "Passwords do not match.";
+                return View();
+            }    
 
             // check if email already exists return error 
             UserRepository temp=new UserRepository();
             User t=new User();
+            t.Name = Name;
             t.Email = Email;
             t.Password= Password;
             int[] isAdd = new int[2];
             isAdd=temp.addUser(t);
             if (isAdd[0]==0) 
             {
-                ViewBag.s = "Email Already Taken !!";
-                return View();
+                ViewBag.s = "Email Exists. Sign In instead";
+                return RedirectToAction("Login");
             }
             else
             {
@@ -87,8 +93,8 @@ namespace HarborView_Inn.Controllers
                
                 HttpContext.Response.Cookies.Append($"{key.ToString()}", System.DateTime.Now.ToString(),cookieOptions);
                 //TempData["Alert"] = "Welcome to new User, Sign Up Successfully !! ";
-                object data = "Signed Up Successfully !! ";
-                return View(data);
+                object data = "Account Created";
+                return RedirectToAction("Index", "Home");
             }
 
         }
