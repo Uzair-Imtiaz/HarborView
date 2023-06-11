@@ -1,0 +1,36 @@
+﻿
+.reservation-box {
+    margin-top: 10px;
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inner-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.Approve-btn {
+    float:right;
+    border-block:solid;
+}
+
+.heading {
+    font-family: Product Sans Bold;
+    font-size: 60px;
+    letter-spacing: -0.04em;
+    margin-top: 30px;
+}
