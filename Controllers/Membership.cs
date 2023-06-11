@@ -8,5 +8,12 @@ namespace HarborView_Inn.Controllers
         {
             return View();
         }
+
+        public IActionResult confirmation()
+        {
+
+            ViewBag.cat = Request.Query["category"].ToString();
+            return View();
+        }
     }
 }

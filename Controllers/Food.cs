@@ -8,5 +8,9 @@ namespace HarborView_Inn.Controllers
         {
             return View();
         }
+        public IActionResult reservation()
+        {
+            return View();
+        }
     }
 }

@@ -6,9 +6,11 @@
 }
 
 
+
       <!-- Icons -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
       <!-- CSS -->
       <link rel="stylesheet" href="~/css/login.css">
@@ -21,32 +23,25 @@
       <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
       <!-- Favicon -->
-      <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon.ico">
-      <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon.ico">
+      <link rel="icon" type="image/png" sizes="32x32" href="~/img/favicon.ico">
+      <link rel="icon" type="image/png" sizes="16x16" href="~/img/favicon.ico">
 
-     <partial name="_partialView" model="x"/>
+      <title>HarborView | Log In</title>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bk-btn">
+                    <a id="bk-btn" href="~/">
+                       <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                   </a>
+                </div>
+                
+            </div>
 
-
-
-
-
-
-      <!-- Login Form -->
-      <div class="Cook">
-          <p>
-              @Model
-          </p>
-      </div>
-@*@if (TempData["Alert1"] != null)
-{
-                        <div class="message">
-                            <strong>
-                                Success !
-                            </strong>
-        @TempData["Alert1"]
-                    </div>
-}*@
+        </div>
+    </div>
+      
 <div class="session">
          <div class="left">
             <svg enable-background="new 0 0 300 302.5" version="1.1" viewBox="0 0 300 302.5" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
