@@ -38,7 +38,7 @@
          <form action="/Authentication/SignUp" class="log-in" method="post">
         
             <h4>The <span>Glory Hotels</span></h4>
-            <p>Create an Account</p>
+            <p style="margin-bottom: 8px;">Create an Account</p>
        
             <div class="floating-label">
                <input placeholder="Name" type="text" name="Name" id="Name" autocomplete="off">
@@ -111,6 +111,34 @@
                   </svg>
                </div>
             </div>
+            <div class="floating-label">
+               <input placeholder="PhoneNo" type="text" name="PhoneNo" id="PhoneNo" autocomplete="off">
+               <label for="PhoneNo">PhoneNo:</label>
+              <div class="icon">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                      <style type="text/css">
+                        .st0 { fill: none; }
+                        .st1 { fill: #000000; }
+                      </style>
+                      <g transform="translate(0 -952.36)">
+                        <path class="st1" d="M51.8,976.9c-1.7,0-3.3,0.9-4.2,2.5c-2.7,4.1-7,6.8-11.8,6.8h-0.1c-4.8,0-9.1-2.7-11.8-6.8c-0.9-1.6-2.5-2.5-4.2-2.5
+                            c-1.7,0-3.3,0.9-4.2,2.5c-3.6,5.4-5.8,11.8-5.8,18.7c0,6.9,2.2,13.3,5.8,18.7c0.9,1.6,2.5,2.5,4.2,2.5c1.7,0,3.3-0.9,4.2-2.5
+                            c2.7-4.1,7-6.8,11.8-6.8h0.1c4.8,0,9.1,2.7,11.8,6.8c0.9,1.6,2.5,2.5,4.2,2.5c1.7,0,3.3-0.9,4.2-2.5c3.6-5.4,5.8-11.8,5.8-18.7
+                            c0-6.9-2.2-13.3-5.8-18.7C55.1,977.9,53.5,976.9,51.8,976.9z"></path>
+                        <circle class="st1" cx="52" cy="962.4" r="4.8"></circle>
+                      </g>
+                  </svg>
+               </div>
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+                  <select class="form-control" name="location">
+                     <option>Location</option>
+                     <option>Lahore</option>
+                     <option>London</option>
+                     <option>Soeoul</option>
+                  </select>
+               </div>
             <br>
         @if (ViewBag.r != null)
         {
@@ -130,55 +158,7 @@
          </form>
       </div>
      
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
       <!-- Footer -->
       <div class="footer-dark" style="font-family: Inter;">
         <footer>

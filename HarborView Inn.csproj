@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Authentication\Logout.cshtml" />
+    <Content Remove="wwwroot\js\chat.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Authentication\Logout.cshtml" />
+    <None Include="wwwroot\js\chat.js" />
     <None Include="wwwroot\js\site.js" />
   </ItemGroup>
 
@@ -21,6 +28,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="RestSharp" Version="110.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +36,15 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Authentication\Logout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Authentication\Logout.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\chat.js" />
   </ItemGroup>
 
 </Project>

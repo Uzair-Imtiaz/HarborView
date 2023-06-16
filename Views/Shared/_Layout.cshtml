@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+
+
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
@@ -56,12 +59,30 @@
                   <li class="nav__item">
                      <a href="~/Food/Dining" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Dining</a>
                   </li>
+                  <li class="nav__item">
+                     <a href="~/Home/Chat" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Chat</a>
+                  </li>
                </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
                <i class='bx bx-grid-alt'></i>
             </div>
-            <a href="~/Authentication/Login" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
+                
+           
+
+                   @if (ViewBag.em==null)
+                    {
+                        // Display the Logout button
+                        <a href="~/Authentication/Login" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
+                    }
+                    else
+                    {
+                        // Display the Sign In button
+                       <a href="~/Authentication/Logout" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Logout</a>
+                    }
+                
+                
+            
          </nav>
       </header>
 

@@ -38,7 +38,7 @@ form p {
 	opacity: .65;
 	font-weight: 400;
 	max-width: 320px;
-	margin-bottom: 40px
+	margin-bottom: 8px;
 }
 
 a.discrete {
@@ -222,7 +222,7 @@ input:focus {
 
 .message, .Alert1 , .Cook{
 	font-size: 30px;
-	margin-top: 40px;
+	margin-top: 30px;
 	text-align: center;
 	color:black;
 }
