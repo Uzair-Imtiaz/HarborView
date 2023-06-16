@@ -10,6 +10,12 @@ namespace HarborView_Inn.Models
             int[] ret = new int[2];
             WebProjectAuthenticateUserContext context=new WebProjectAuthenticateUserContext();
             User user = context.Users.Find(temp.Email);
+            if (user == null)
+            {
+                ret[0] = 0;
+                ret[1] = 0;
+                return ret;
+            }
             if (user.Password == temp.Password)
             {
                 ret[0]=1;

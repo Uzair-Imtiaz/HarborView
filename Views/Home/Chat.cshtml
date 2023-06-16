@@ -1,0 +1,61 @@
+﻿@page
+@{
+    var x = "Chat With Me";
+}
+
+
+       <!-- Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <!-- CSS -->
+     <link rel="stylesheet" href="~/css/styles.css">
+     
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <!-- Tailwind CDN -->
+      <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+     <partial name="_partialView" model="x"/>  
+   
+   
+    
+      <div class="row p-1">
+        <div class="col-6 text-end">
+            <h2 style="color : Black ; font-size:30px; padding:5px 30px;" > Chat With Others ! </h2>
+        </div>
+
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+           <hr />
+        </div>
+
+    </div>
+     
+
+            <div class="container">
+
+
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="text" id="messageInput"/> 
+            <input type="button"  style="border: 1px solid black; padding: 1px 1px;" id="sendButton" value="Send Message"  /> 
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <ul style="list-style-type: disc;" id="messagesList" ></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

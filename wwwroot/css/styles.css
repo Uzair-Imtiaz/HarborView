@@ -755,13 +755,9 @@ body.dark-theme {
 	border-radius: 15px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
 	background: #fff;
-	padding: 30px 50px;
 	min-height: 200px;
-	box-shadow: 0 2px 25px rgba(114, 114, 114, 0.1);
-	border: 1px solid #d8d8d8;
 	z-index: 99;
 	margin: auto;
 	margin-top: 15%;
@@ -781,8 +777,7 @@ body.dark-theme {
 }
 
 .search-box .input-box input {
-	border: .6px solid rgb(219, 219, 219);
-	border-radius: 5px;
+	
 	outline: none;
 	padding: 10px;
 	width: 100%;

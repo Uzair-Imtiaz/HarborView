@@ -16,18 +16,27 @@ namespace HarborView_Inn.Controllers
         public IActionResult Index()
         {
             //ViewBag.Title = "HarborView Inn";
+            ViewBag.em = Request.Cookies["Cook"];
             return View();
         }
 
         public IActionResult Locations()
         {
             //ViewBag.title = "HarborView Inn | About";
+            ViewBag.em = Request.Cookies["Cook"];
             return View();
         }
 
         public IActionResult About()
         {
             //ViewBag.title = "HarborView Inn | About";
+            ViewBag.em = Request.Cookies["Cook"];
+            return View();
+        }
+        public IActionResult Chat()
+        {
+            //ViewBag.Title = "HarborView Inn";
+            ViewBag.em = Request.Cookies["Cook"];
             return View();
         }
 
