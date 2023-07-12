@@ -239,3 +239,10 @@ input:focus {
 	margin: auto;
 	font-size: 40px;
 }
+
+.alrt {
+	place-items: center;
+	display: grid;
+	width: auto;
+	margin-top: 10px;
+}

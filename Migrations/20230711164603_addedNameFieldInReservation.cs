@@ -5,14 +5,14 @@
 namespace HarborView_Inn.Migrations
 {
     /// <inheritdoc />
-    public partial class AddColInUser : Migration
+    public partial class addedNameFieldInReservation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Location",
-                table: "Users",
+                name: "ReservationName",
+                table: "Reservation",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "");
@@ -22,8 +22,8 @@ namespace HarborView_Inn.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Location",
-                table: "Users");
+                name: "ReservationName",
+                table: "Reservation");
         }
     }
 }

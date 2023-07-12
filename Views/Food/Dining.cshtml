@@ -2,6 +2,8 @@
     var x = "Dining";
 }  
 
+@model List<HarborView_Inn.Models.FoodItems>
+
 <!-- Icons -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -93,120 +95,32 @@
 
       <!-- Order Section -->
 
-      @if(ViewBag.desc1==null)
-      {
-           ViewBag.desc1 = "This pepperoni pan pizza is made with a simple yet superlative from - scratch tomato sauce, two types of mozzarella, Parmesan cheese, pepperoni, and either store-bought or homemade dough.";
-           ViewBag.desc2 ="Lasagne are a type of pasta, possibly one of the oldest types, made of very wide, flat sheets. Either term can also refer to an Italian dish made of stacked layers of lasagne alternating with fillings.";
-           ViewBag.desc3 = "Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold."; 
-           ViewBag.desc4 = "A taco is a traditional Mexican dish consisting of a small hand - sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.";
-          @* ViewBag.desc1 = ViewBag.desc1.Substring(1, ViewBag.desc1.Length - 2);
-           ViewBag.desc2 = ViewBag.desc2.Substring(1, ViewBag.desc2.Length - 2);
-           ViewBag.desc3 = ViewBag.desc3.Substring(1, ViewBag.desc3.Length - 2);
-           ViewBag.desc4 = ViewBag.desc4.Substring(1, ViewBag.desc4.Length - 2);*@
-
-
-
-    ViewBag.path1 = "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg";
-    ViewBag.path2 = "https://media.istockphoto.com/photos/lasagna-on-a-square-white-plate-picture-id535851351?k=20&m=535851351&s=612x612&w=0&h=jdWOk9G_OOzHvPrvFrigqzk3EoucmIhUZr1-ey9NcGM=";
-    ViewBag.path3 = "https://www.curiouscuisiniere.com/wp-content/uploads/2013/06/Japanese-Sushi-0458.450-450x270.jpg";
-    ViewBag.path4 = "https://lp-cms-production.imgix.net/image_browser/tacos_mexico_G.jpg";
-    @* ViewBag.path1 = ViewBag.path1.Substring(1, ViewBag.path1.Length - 2);
-           ViewBag.path2 = ViewBag.path2.Substring(1, ViewBag.path2.Length - 2);
-           ViewBag.path3 = ViewBag.path3.Substring(1, ViewBag.path3.Length - 2);
-           ViewBag.path4 = ViewBag.path4.Substring(1, ViewBag.path4.Length - 2);*@
-
-    ViewBag.iname1 = "Pepporoni Pizza";
-    ViewBag.iname2 = "Lasagne";
-    ViewBag.iname3 = "Sushi";
-    ViewBag.iname4 = "Mexican Tacos";
-      
-       }
       <h1 class="sec-head" style="text-align: center; margin-top: 100px; margin-bottom: 60px;">Order Now</h1>
       <div class="big">
-         <article class="recipe">
-            <div class="pizza-box">
-              <img src="@ViewBag.path1" width="1500" height="1368" alt="">
-            </div>
-            <div class="recipe-content">
-               <h1 class="recipe-title"><a href="#"> @ViewBag.iname1</a></h1>
-               <p class="recipe-metadata">
-                  <span class="recipe-rating">★★★★<span>☆</span></span>
-                  <span class="recipe-votes">(54 votes)</span>
-               </p>
-               <p class="recipe-desc">@ViewBag.desc1</p>
-               <br>    
-               <button class="recipe-save" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
-                  </svg>
-                  Order
-               </button>
-            </div>
-         </article>
-         <br><br>
-         <article class="recipe">
-            <div class="pizza-box">
-              <img src="@ViewBag.path2" width="1500" height="1368" alt="">
-            </div>
-            <div class="recipe-content">
-               <h1 class="recipe-title"><a href="#">@ViewBag.iname2</a></h1>
-               <p class="recipe-metadata">
-                  <span class="recipe-rating">★★★★<span>☆</span></span>
-                  <span class="recipe-votes">(54 votes)</span>
-               </p>
-               <p class="recipe-desc">@ViewBag.desc2</p>
-               <br>    
-               <button class="recipe-save" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
-                  </svg>
-                  Order
-               </button>
-            </div>
-         </article>
-         <br><br>
-         <article class="recipe">
-            <div class="pizza-box">
-              <img src="@ViewBag.path3" width="1500" height="1368" alt="">
-            </div>
-            <div class="recipe-content">
-               <h1 class="recipe-title"><a href="#">@ViewBag.iname3</a></h1>
-               <p class="recipe-metadata">
-                  <span class="recipe-rating">★★★★<span>☆</span></span>
-                  <span class="recipe-votes">(54 votes)</span>
-               </p>
-               <p class="recipe-desc">@ViewBag.desc3</p>
-               <br>    
-               <button class="recipe-save" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
-                  </svg>
-                  Order
-               </button>
-            </div>
-         </article>
-         <br><br>
-         <article class="recipe">
-            <div class="pizza-box">
-            <img src="@ViewBag.path4" width="1500" height="1368" alt="">
-            </div>
-            <div class="recipe-content">
-               <h1 class="recipe-title"><a href="#">@ViewBag.iname4</a></h1>
-               <p class="recipe-metadata">
-                  <span class="recipe-rating">★★★★<span>☆</span></span>
-                  <span class="recipe-votes">(54 votes)</span>
-               </p>
-               <p class="recipe-desc">@ViewBag.desc4</p>
-               <br>    
-               <button class="recipe-save" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
-                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
-                  </svg>
-                  Order
-               </button>
-            </div>
-         </article>
-         <br><br>
+          @foreach (var item in Model)
+          {
+             <article class="recipe">
+                <div class="pizza-box">
+                  <img src="item.Image" width="1500" height="1368" alt="">
+                </div>
+                <div class="recipe-content">
+                   <h1 class="recipe-title"><a href="#"> item.Name</a></h1>
+                   <p class="recipe-metadata">
+                   @for(int i = 0; i < (int)item.Rating; i++)
+                   {
+                        <span class="recipe-rating">★</span>
+                   }
+                   @for(int i = (int)item.Rating; i < 5; i--)
+                   {
+                        <span>☆</span>
+                   }
+                   </p>
+                   <p class="recipe-desc">item.Description</p>
+                   <br>    
+                </div>
+             </article>
+             <br><br>
+             }
          <a href="reservation" class="tbl-book" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
                   <rect x="6" y="16" width="12" height="2" rx="1" fill="currentColor" />

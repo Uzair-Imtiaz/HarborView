@@ -21,19 +21,30 @@ namespace HarborView_Inn.Controllers
             Response.Cookies.Delete("Cook");
             Response.Cookies.Delete("Cook1");
             Response.Cookies.Delete("Cook2");
+
+            HttpContext.Session.Clear();
+            HttpContext.Response.Cookies.Delete("AspNetCore.Session");
+            ViewBag.isAuthentication = null;
+
             // Redirect or return a view
             return RedirectToAction("Index", "Home");
 
         }
 
         [HttpPost]
-        public IActionResult Login(string Email,string Password)
+        public IActionResult Login(string Email, string Password)
         {
-            // if any parameter is null return error 
-            if (Email == null || Password == null)
-            { 
-                ViewBag.q = "You Left One of the Field Empty !!";
+            if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
+            {
+                ViewBag.allReq = "All fields are required!";
                 return View();
+            }
+
+            if (Email == "admin@hotel.com" && Password == "admin123")
+            {
+                HttpContext.Session.SetString("admin", "ok");
+
+                return RedirectToAction("admin", "Admin");
             }
 
             // Authenticate
@@ -41,26 +52,24 @@ namespace HarborView_Inn.Controllers
             User t = new User();
             t.Email = Email;
             t.Password = Password;
-            int[] isAuthenticated = new int[2];
-            isAuthenticated=temp.authenticateUser(t);
-           
-            
-            if (isAuthenticated[0]==0)
+            int[] isAuthenticated = temp.authenticateUser(t);
+
+            if (isAuthenticated[0] == 0)
             {
-                ViewBag.p = "Invalid Credentials !!";
+                ViewBag.wrongCred = "Invalid email or password.";
                 return View();
             }
             else
             {
                 WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext();
-                User user = context.Users.Find(Email);
+                User? user = context.Users.Find(Email);
                 var cookieOptions1 = new CookieOptions
                 {
                     Expires = DateTime.Now.AddHours(1), // Set the expiration date of the cookie
                     HttpOnly = true // Specify if the cookie is accessible only through HTTP
                 };
-              
-                HttpContext.Response.Cookies.Append("Cook2",user.Location, cookieOptions1);
+
+                HttpContext.Response.Cookies.Append("Cook2", user.Location, cookieOptions1);
 
                 int key = isAuthenticated[1];
                 var cookieOptions = new CookieOptions
@@ -69,25 +78,20 @@ namespace HarborView_Inn.Controllers
                     HttpOnly = true // Specify if the cookie is accessible only through HTTP
                 };
 
+                HttpContext.Session.SetString("UserEmail", Email);
+                HttpContext.Session.SetString("UserLocation", user.Location);
 
                 HttpContext.Response.Cookies.Append("Cook", Email, cookieOptions);
-                ViewBag.em = Request.Cookies["Cook"];
-                /*return RedirectToAction("Index", "Home");*/
+                ViewBag.isAuthenticated = HttpContext.Session.GetString("UserEmail");
 
-                //var em = Email.Split('@');
-                ////string firstDateTime = Request.Cookies["Cook"];
-                ////TempData["Alert1"] = $"Welcome again , You Visited Us At {firstDateTime} For the First Time.";
-                //object data = $"Welcome {em[0].ToUpper()} , You Visited us at {firstDateTime} First Time !!";
-                //return View(data);
+                ViewBag.em = HttpContext.Request.Cookies["Cook"];
+
                 return RedirectToAction("Index", "Home");
             }
-            
-
         }
 
         public IActionResult SignUp()
         {
-            //ViewBag.em = Request.Cookies["Cook"];
             return View();
         }
 
@@ -97,7 +101,7 @@ namespace HarborView_Inn.Controllers
             // if any parameter is null return error 
             if (Email == null || Password == null || Name == null || PhoneNo == null)
             {
-                ViewBag.r = "All Fields are required!";
+                ViewBag.allReq = "All Fields are required!";
                 return View();
             }
             if (!Password.Equals(Confirm_Password))
@@ -108,7 +112,7 @@ namespace HarborView_Inn.Controllers
 
             // check if email already exists return error 
             UserRepository temp=new UserRepository();
-            User t=new User();
+            User t = new User();
             t.Name = Name;
             t.Email = Email;
             t.Password= Password;
@@ -116,19 +120,15 @@ namespace HarborView_Inn.Controllers
             string loc = Request.Form["location"];
             t.Location = loc;
             int[] isAdd = new int[2];
-            isAdd=temp.addUser(t);
+            isAdd = temp.addUser(t);
             if (isAdd[0]==0) 
             {
-                ViewBag.s = "Email Exists. Sign In instead";
-                return View();
+                TempData["signinFromSignup"] = "Email Exists. Sign In instead";
+                return RedirectToAction("login");
             }
             else
             {
                 int key = isAdd[1];
-
-
-              
-
                 var cookieOptions = new CookieOptions
                 {
                     Expires = DateTime.Now.AddHours(1), // Set the expiration date of the cookie

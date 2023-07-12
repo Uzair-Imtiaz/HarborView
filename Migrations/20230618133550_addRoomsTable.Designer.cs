@@ -12,15 +12,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HarborView_Inn.Migrations
 {
     [DbContext(typeof(WebProjectAuthenticateUserContext))]
-    [Migration("20230611201807_AddColInReservation")]
-    partial class AddColInReservation
+    [Migration("20230618133550_addRoomsTable")]
+    partial class addRoomsTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -123,6 +123,29 @@ namespace HarborView_Inn.Migrations
                     b.HasKey("ResId");
 
                     b.ToTable("Reservation");
+                });
+
+            modelBuilder.Entity("HarborView_Inn.Models.Room", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<decimal>("price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("roomNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("roomType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Rooms");
                 });
 
             modelBuilder.Entity("HarborView_Inn.Models.User", b =>

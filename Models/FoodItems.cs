@@ -8,11 +8,8 @@ namespace HarborView_Inn.Models
         [Key]
         public string Name { get; set; }
         public string Description { get; set; }
-
-        public string itemName { get; set; }
+        public string Location { get; set; }
         public string Image { get; set; }
-
         public float Rating { get; set; }
-
     }
 }

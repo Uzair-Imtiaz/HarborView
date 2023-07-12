@@ -13,61 +13,59 @@ namespace HarborView_Inn.Controllers
         public IActionResult Dining()
         {
             ViewBag.em = Request.Cookies["Cook"];
-            if (HttpContext.Request.Cookies.ContainsKey("Cook1") || HttpContext.Request.Cookies.ContainsKey("Cook2"))
+            var userLocation = HttpContext.Session.GetString("UserLocation");
+            WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext();
+            List<FoodItems> foodItems = context.Fooditems.Where(e => e.Location == userLocation).ToList();
+            if (foodItems.Count == 0)
             {
-                WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext();
-                FoodItems food = new FoodItems();
-                var f = context.Fooditems.Where(e => e.Name == Request.Cookies["Cook1"]).ToList();
-                if (f.Count==0)
-                {
-                    f = context.Fooditems.Where(e => e.Name == Request.Cookies["Cook2"]).ToList();
-                }
-                food = f[0];
-                var desc = food.Description.Split('@');
-                ViewBag.desc1 = desc[0];
-                ViewBag.desc2 = desc[1];
-                ViewBag.desc3 = desc[2];
-                ViewBag.desc4 = desc[3];
+                FoodItems f1 = new FoodItems();
+                FoodItems f2 = new FoodItems();
+                FoodItems f3 = new FoodItems();
+                FoodItems f4 = new FoodItems();
 
-                var path = food.Image.Split('@');
-                ViewBag.path1 = path[0];
-                ViewBag.path2 = path[1];
-                ViewBag.path3 = path[2];
-                ViewBag.path4 = path[3];
-
-                var iname = food.itemName.Split('@');
-                ViewBag.iname1 = iname[0];
-                ViewBag.iname2 = iname[1];
-                ViewBag.iname3 = iname[2];
-                ViewBag.iname4 = iname[3];
+                f1.Description = "This pepperoni pan pizza is made with a simple yet superlative from - scratch tomato sauce, two types of mozzarella, Parmesan cheese, pepperoni, and either store-bought or homemade dough.";
+                f2.Description = "Lasagne are a type of pasta, possibly one of the oldest types, made of very wide, flat sheets. Either term can also refer to an Italian dish made of stacked layers of lasagne alternating with fillings.";
+                f3.Description = "Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.";
+                f4.Description = "A taco is a traditional Mexican dish consisting of a small hand - sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.";
+                
+                f1.Image = "https://sipbitego.com/wp-content/uploads/2021/08/Pepperoni-Pizza-Recipe-Sip-Bite-Go.jpg";
+                f2.Image = "https://media.istockphoto.com/photos/lasagna-on-a-square-white-plate-picture-id535851351?k=20&m=535851351&s=612x612&w=0&h=jdWOk9G_OOzHvPrvFrigqzk3EoucmIhUZr1-ey9NcGM=";
+                f3.Image = "https://www.curiouscuisiniere.com/wp-content/uploads/2013/06/Japanese-Sushi-0458.450-450x270.jpg";
+                f4.Image = "https://lp-cms-production.imgix.net/image_browser/tacos_mexico_G.jpg";
 
 
+                f1.Name = "Pepporoni Pizza";
+                f2.Name = "Lasagne";
+                f3.Name = "Sushi";
+                f4.Name = "Mexican Tacos";
+
+                foodItems.Add(f1);
+                foodItems.Add(f2);
+                foodItems.Add(f3);
+                foodItems.Add(f4);
             }
-            
-
-            return View();
+            return View(foodItems);
         }
         public IActionResult reservation()
         {
-            ViewBag.em = Request.Cookies["Cook"];
+            if (!HttpContext.Request.Cookies.ContainsKey("Cook"))
+            {
+                TempData["signinFromMembership"] = "You need to login first!";
+                return RedirectToAction("Login", "Authentication");
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult reservation(string Date,string Time,string Message,string Name,string PhoneNo)
         {
-            if (!HttpContext.Request.Cookies.ContainsKey("Cook"))
-            {
-                ViewBag.inv = "Login/Signup First !!";
-                return View();
-            }
 
             string pack = Request.Form["package"];
             string adult = Request.Form["adults"];
-            string child = Request.Form["childrens"];
+            string child = Request.Form["children"];
             string infants = Request.Form["infants"];
 
-            if(Date==null || Time==null || Name==null || PhoneNo==null || adult == null || child==null)
+            if(Date==null || Time==null || Name==null || PhoneNo==null || adult == null)
             {
                 ViewBag.r = "You Left One of the Field Empty !!";
                 return View();
@@ -94,15 +92,8 @@ namespace HarborView_Inn.Controllers
             DiningTable din=new DiningTable();
             var da = Date.Split('-');
             var ta = Time.Split(':');
-            //var orig = int.Parse(ta[0]);
-            //if (int.Parse(ta[0]) > 12)
-            //{
-            //    orig = int.Parse(ta[0]) - 12;
-            //}
             DateTime dt = new DateTime(int.Parse(da[0]), int.Parse(da[1]), int.Parse(da[2]), int.Parse(ta[0]), int.Parse(ta[1]), 0);
             din.Date = dt;
-            din.noOfGuest = int.Parse(adult) + int.Parse(child);
-            din.Bill = din.noOfGuest * 200;
 
             din.Email =Request.Cookies["Cook"]; 
             din.isActive = true;
@@ -118,7 +109,6 @@ namespace HarborView_Inn.Controllers
                     var a = st.Date.ToString().Split(' ');
                     if (dt > st.Date.AddHours(3) && a[0] == b[0] || dt.AddHours(3) <st.Date && a[0] == b[0])
                     {
-                        din.bookedTable = st.TableId;  // if table is booked at 12pm and all tables are reserved then give this table for booking at 9 am or 3pm and record table id . 
                         isGiven = true;
                         break;
                     }

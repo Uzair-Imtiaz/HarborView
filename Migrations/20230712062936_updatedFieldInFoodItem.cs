@@ -5,13 +5,18 @@
 namespace HarborView_Inn.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedColInFood : Migration
+    public partial class updatedFieldInFoodItem : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
+            migrationBuilder.RenameColumn(
                 name: "itemName",
+                table: "Fooditems",
+                newName: "status");
+
+            migrationBuilder.AddColumn<string>(
+                name: "Location",
                 table: "Fooditems",
                 type: "nvarchar(max)",
                 nullable: false,
@@ -22,8 +27,13 @@ namespace HarborView_Inn.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "itemName",
+                name: "Location",
                 table: "Fooditems");
+
+            migrationBuilder.RenameColumn(
+                name: "status",
+                table: "Fooditems",
+                newName: "itemName");
         }
     }
 }

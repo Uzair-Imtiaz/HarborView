@@ -7,142 +7,95 @@ namespace HarborView_Inn.Controllers
     {
         public IActionResult get_membership()
         {
-            ViewBag.em = Request.Cookies["Cook"];
             return View();
         }
 
         public IActionResult confirmation()
         {
-            ViewBag.em = Request.Cookies["Cook"];
+            if (!HttpContext.Request.Cookies.ContainsKey("Cook"))
+            {
+                TempData["signinFromMembership"] = "You need to login first!";
+                return RedirectToAction("Login", "Authentication");
+            }
             ViewBag.cat = Request.Query["category"].ToString();
             WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext();
             var vis = context.Reservation.Where(e => e.isActive == true).ToList();
-            //int rooms = 0;
-            //foreach (var s in vis)
-            //{
-            //    rooms += s.noOfRooms;
-            //}
-            ViewBag.rem = $"{3 - vis.Count} Rooms are left !! Hurry Up !!";
-
             return View();
         }
         [HttpPost]
-        public IActionResult confirmation(string CheckIn,string CheckOut, string Message, string Name, string PhoneNo)
+        public IActionResult Confirmation(string CheckIn, string CheckOut, string Message, string Name, string PhoneNo)
         {
             ViewBag.em = Request.Cookies["Cook"];
             ViewBag.cat = Request.Query["category"].ToString();
 
-            if (!HttpContext.Request.Cookies.ContainsKey("Cook"))
-            {
-                ViewBag.inv = "Login/Signup First !!";
-                return View();
-            }
-            
             string pack = Request.Form["package"];
             string catg = Request.Form["category"];
             string adult = Request.Form["adults"];
-            string child = Request.Form["childrens"];
+            string child = Request.Form["children"];
             string infants = Request.Form["infants"];
-            if (CheckIn == null || CheckOut==null || Name == null || PhoneNo == null || adult == null || child == null)
+            string rooms = Request.Form["rooms"];
+
+            if (string.IsNullOrEmpty(CheckIn) || string.IsNullOrEmpty(CheckOut) ||
+                string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(PhoneNo) ||
+                string.IsNullOrEmpty(adult))
             {
-                ViewBag.r = "You Left One of the Field Empty !!";
+                ViewBag.allReq = "Fill in all the required fields!";
                 return View();
             }
 
-            WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext();
+            // Perform additional validations if needed
 
-            // get all records to see if booking has done and make its isActive 0 if checkout date has passed
-            var vis = context.Reservation.Where(e => e.isActive == true).ToList();
-            //int rooms = 0;
-            //foreach (var s in vis)
-            //{
-            //    rooms += s.noOfRooms;
-            //}
-            foreach (var st in vis)
-            {
-				var da1 = st.CheckOut.ToString().Split(' ');
-				var da2 = DateTime.Now.ToString().Split(' ');
-				if (st.CheckOut >  DateTime.Now && da1[0] == da2[0])
-                {
-                    st.isActive = false;
-                    context.SaveChanges();
-                }
-
-            }
-
-            Reservation res=new Reservation();
-            res.noOfRooms = (int.Parse(child) + int.Parse(adult))/2;
-            //if(res.noOfRooms + rooms >10) // cant book room
-            //{
-            //    ViewBag.book = "No Free Space at the moment !!";
-            //    return View();
-            //}
+            // Create a new Reservation object and set its properties
+            Reservation res = new Reservation();
             res.Category = catg;
-            var ci = CheckIn.Split('-');
-            DateTime checkIn = new DateTime(int.Parse(ci[0]), int.Parse(ci[1]), int.Parse(ci[2]), 12, 0, 0);
-            var co = CheckOut.Split('-');
-            DateTime checkOut = new DateTime(int.Parse(co[0]), int.Parse(co[1]), int.Parse(co[2]), 12, 0, 0);
-            res.CheckOut = checkOut;
-            res.CheckIn = checkIn;
+            res.CheckIn = DateTime.Parse(CheckIn);
+            res.CheckOut = DateTime.Parse(CheckOut);
+            res.noOfRooms = int.Parse(rooms);
+            res.status = "Pending";
+            res.ReservationName = Name;
+
             if (res.CheckOut < res.CheckIn)
             {
-                ViewBag.err = "Checkin & Checkout Dates Mismatched !!";
+                ViewBag.invalidDates = "Check-out date cannot be earlier than Check-in date.";
                 return View();
             }
+
             TimeSpan difference = res.CheckOut.Subtract(res.CheckIn);
-            if (catg=="Silver")
+
+            int adultCount = int.TryParse(child, out int adultValue) ? adultValue : 0;
+            int childCount = int.TryParse(child, out int childValue) ? childValue : 0;
+            int InfantCount = int.TryParse(infants, out int infantValue) ? infantValue : 0;
+
+            if (catg == "Silver")
             {
-                res.Bill = res.noOfRooms * difference.Days * 1000;
+                res.Bill = (float)(childCount + adultCount + InfantCount / 2 / 2) * difference.Days * 1000;
             }
             else if (catg == "General")
             {
-                res.Bill = res.noOfRooms * difference.Days * 1500;
+                res.Bill = (float)(childCount + adultCount + InfantCount / 2 / 2) * difference.Days * 1500;
             }
             else if (catg == "gold")
             {
-                res.Bill = res.noOfRooms * difference.Days * 3000;
+                res.Bill = (float)(childCount + adultCount + InfantCount / 2 / 2) * difference.Days * 3000;
             }
-            else //(catg == "Platinum")
+            else if (catg == "Platinum")
             {
-                res.Bill = res.noOfRooms * difference.Days * 4500;
+                res.Bill = (float)(childCount + adultCount + InfantCount / 2 / 2) * difference.Days * 4500;
             }
-            res.Email= Request.Cookies["Cook"];
+
+            res.Email = Request.Cookies["Cook"];
             res.isActive = true;
 
-            // lets say we have 10 rooms only to fit people  . 
-            bool isGiven = false;
-            if (vis.Count >=3)  // no of enttries 3 hngi to hi phr woh exisiting mn dhundenga
+            // Save the reservation to the database
+            using (WebProjectAuthenticateUserContext context = new WebProjectAuthenticateUserContext())
             {
-                foreach (var st in vis)
-                {
-                    var b = checkIn.ToString().Split(' ');
-                    var a = st.CheckOut.ToString().Split(' ');
-                    if (checkIn > st.CheckOut && /*a[0] == b[0] &&*/ catg==st.Category || checkOut < st.CheckIn && /*a[0] == b[0] &&*/ catg == st.Category)
-                    {
-                        res.bookedRoom = st.ResId; 
-                        isGiven = true;
-                        break;
-                    }
-                }
-            }
-
-            if (!isGiven && vis.Count < 3 || isGiven)
-            {
+                // Add the reservation to the context
                 context.Reservation.Add(res);
                 context.SaveChanges();
-               
-                var vis1 = context.Reservation.Where(e => e.isActive == true).ToList();
-                ViewBag.rem = $"{3 - vis1.Count} Rooms are left !! Hurry Up !!";
-                ViewBag.book = "Your Room has been Booked !! ";
             }
-            else
-            {
-                var vis1 = context.Reservation.Where(e => e.isActive == true).ToList();
-                ViewBag.rem = $"{3 - vis1.Count} Rooms are left !! Hurry Up !!";
-               
-                ViewBag.book = "No Free Space at the moment !!";
-            }
-            return View();
+
+            TempData["Book"] = "Your reservation request has been received!";
+            return RedirectToAction("Index", "Home");
         }
 
 

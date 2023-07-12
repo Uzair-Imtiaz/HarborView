@@ -1,0 +1,435 @@
+﻿++Solution 'HarborView Inn' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:HarborView Inn.sln
+++HarborView Inn
+i:{00000000-0000-0000-0000-000000000000}:HarborView Inn
+++Connected Services 
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1928
+++Dependencies
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1927
+++Properties
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\properties\
+++wwwroot
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\
+++css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\
+++admin.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\admin.css
+++book.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\book.css
+++dining.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\dining.css
+++login.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\login.css
+++map.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\map.css
+++membership.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\membership.css
+++styles.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\css\styles.css
+++fonts
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\
+++img
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\
+++js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\
+++Components
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\components\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\components\
+++Controllers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\
+++Admin.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\admin.cs
+++Authentication.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\authentication.cs
+++Food.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\food.cs
+++HomeController.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\homecontroller.cs
+++Membership.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\controllers\membership.cs
+++Hubs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\hubs\
+++Migrations
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\
+++20230618073357_InitialCreate.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230618073357_initialcreate.cs
+++20230618133550_addRoomsTable.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230618133550_addroomstable.cs
+++20230711151747_addedStatusVariable.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711151747_addedstatusvariable.cs
+++20230711152154_droppedRoomTable.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711152154_droppedroomtable.cs
+++20230711164603_addedNameFieldInReservation.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711164603_addednamefieldinreservation.cs
+++WebProjectAuthenticateUserContextModelSnapshot.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\webprojectauthenticateusercontextmodelsnapshot.cs
+++Models
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\
+++DiningTable.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\diningtable.cs
+++ErrorViewModel.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\errorviewmodel.cs
+++FoodItems.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\fooditems.cs
+++Reservation.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\reservation.cs
+++ReservationRepository.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\reservationrepository.cs
+++User.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\user.cs
+++UserRepository.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\userrepository.cs
+++WebProjectAuthenticateUserContext.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\webprojectauthenticateusercontext.cs
+++Views
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\
+++Admin
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\admin\
+++admin.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\admin\admin.cshtml
+++Authentication
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\authentication\
+++Login.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\authentication\login.cshtml
+++Logout.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\authentication\logout.cshtml
+++SignUp.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\authentication\signup.cshtml
+++Food
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\food\
+++Dining.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\food\dining.cshtml
+++reservation.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\food\reservation.cshtml
+++Home
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\
+++About.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\about.cshtml
+++Chat.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\chat.cshtml
+++Index.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\index.cshtml
+++Locations.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\locations.cshtml
+++Membership
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\membership\
+++confirmation.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\membership\confirmation.cshtml
+++get_membership.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\membership\get_membership.cshtml
+++Shared
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\
+++_Layout.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\_layout.cshtml
+++_partialView.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\_partialview.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\error.cshtml
+++_ViewImports.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\_viewstart.cshtml
+++appsettings.json
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\appsettings.json
+++libman.json
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\libman.json
+++Program.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\program.cs
+++No service dependencies discovered
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1929
+++Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:analyzers
+++Frameworks
+i:{723e6755-2236-45c9-a436-ea0882c52279}:frameworks
+++Packages
+i:{723e6755-2236-45c9-a436-ea0882c52279}:packages
+++launchSettings.json
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\properties\launchsettings.json
+++ProductSans-Black.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-black.woff
+++ProductSans-BlackItalic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-blackitalic.woff
+++ProductSans-Bold.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-bold.woff
+++ProductSans-BoldItalic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-bolditalic.woff
+++ProductSans-Italic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-italic.woff
+++ProductSans-Light.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-light.woff
+++ProductSans-LightItalic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-lightitalic.woff
+++ProductSans-Medium.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-medium.woff
+++ProductSans-MediumItalic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-mediumitalic.woff
+++ProductSans-Regular.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-regular.woff
+++ProductSans-Thin.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-thin.woff
+++ProductSans-ThinItalic.woff
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\fonts\productsans-thinitalic.woff
+++bg.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\bg.jpg
+++bg-dark.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\bg-dark.jpg
+++bg-pattern.svg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\bg-pattern.svg
+++contact.svg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\contact.svg
+++favicon.ico
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\favicon.ico
+++h1.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h1.jpg
+++h2.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h2.jpg
+++h3.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h3.jpg
+++h4.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h4.jpg
+++h5.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h5.jpg
+++h6.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h6.jpg
+++h7.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h7.jpg
+++h8.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\h8.jpg
+++login.jpg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\login.jpg
+++map.svg
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\img\map.svg
+++chat.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\chat.js
+++formDateLogic.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\formdatelogic.js
+++main.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\main.js
+++membership.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\membership.js
+++site.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\site.js
+++bootstrap
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\
+++jquery
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\
+++jquery-validation
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation-unobtrusive\
+++microsoft
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\
+++AboutUsSummary.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\components\aboutussummary.cs
+++MyHub.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\hubs\myhub.cs
+++20230618073357_InitialCreate.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230618073357_initialcreate.designer.cs
+++20230618133550_addRoomsTable.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230618133550_addroomstable.designer.cs
+++20230711151747_addedStatusVariable.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711151747_addedstatusvariable.designer.cs
+++20230711152154_droppedRoomTable.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711152154_droppedroomtable.designer.cs
+++20230711164603_addedNameFieldInReservation.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230711164603_addednamefieldinreservation.designer.cs
+++Logout.cshtml.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\authentication\logout.cshtml.cs
+++AboutUsSummary
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\components\aboutussummary\
+++_Layout.cshtml.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.7\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\program files\dotnet\sdk\6.0.102\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\.nuget\packages\system.text.json\7.0.2\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore (7.0.7)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1940
+++Microsoft.EntityFrameworkCore.Design (7.0.5)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1942
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.7)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1941
+++Microsoft.EntityFrameworkCore.Tools (7.0.5)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1943
+++RestSharp (110.2.0)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1944
+++toastr (2.1.1)
+i:{723e6755-2236-45c9-a436-ea0882c52279}:>1945
+++dist
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\dist\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\dist\
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\signalr\dist\
+++LICENSE
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\license.txt
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++signalr
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\signalr\
+++Default.cshtml
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\components\aboutussummary\default.cshtml
+++jquery.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++Default.cshtml.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\views\home\components\aboutussummary\default.cshtml.cs
+++bootstrap.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++browser
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\signalr\dist\browser\
+++bootstrap.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\jquery\dist\jquery.min.map
+++signalr.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\signalr\dist\browser\signalr.js
+++bootstrap.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++signalr.min.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\microsoft\signalr\dist\browser\signalr.min.js
+++bootstrap.rtl.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++admin.js
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\wwwroot\js\admin.js
+++20230712062936_updatedFieldInFoodItem.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230712062936_updatedfieldinfooditem.cs
+++20230712062936_updatedFieldInFoodItem.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230712062936_updatedfieldinfooditem.designer.cs
+++AdminViewModel.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\models\adminviewmodel.cs
+++20230712064516_updatedTablesOfDining.cs
+++20230712064516_updatedTablesOfDining.Designer.cs
+++20230712064720_updatedTablesOfDining.cs
+++20230712064720_updatedTablesOfDining.Designer.cs
+++20230712064927_updatedTablesOfDining.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230712064927_updatedtablesofdining.cs
+++20230712064927_updatedTablesOfDining.Designer.cs
+i:{723e6755-2236-45c9-a436-ea0882c52279}:c:\users\uzair\onedrive\desktop\semester 6\web\harborview inn\harborview inn\migrations\20230712064927_updatedtablesofdining.designer.cs

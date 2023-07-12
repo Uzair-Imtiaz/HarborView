@@ -9,6 +9,8 @@ namespace HarborView_Inn.Models
         public int ResId { get; set; }
         public int noOfRooms { get; set; }
 
+        public string ReservationName { get; set; }
+
         public string Category { get; set; }
 
         public DateTime CheckIn { get; set; }   // we will cancatenate the time by ourselves according to hotel policy
@@ -19,9 +21,8 @@ namespace HarborView_Inn.Models
 
         //[ForeignKey("User")]
         public string Email { get; set; }
-
         public bool isActive { get; set; }
 
-        public int bookedRoom { get;set; }
+        public string status { get; set; }
     }
 }

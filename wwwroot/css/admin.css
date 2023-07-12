@@ -1,7 +1,7 @@
 ﻿
 .reservation-box {
     margin-top: 10px;
-    width: 50%;
+    width: 100%;
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
@@ -24,8 +24,23 @@ p {
 }
 
 .Approve-btn {
-    float:right;
-    border-block:solid;
+    margin-top: 5px;
+    border: 1px solid none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3rem;
+    background-color: #059c23;
+    color: white;
+    float: right;
+}
+
+.Reject-btn {
+    background-color: #f01f1f;
+    margin-top: 5px;
+    border: 1px solid none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3rem;
+    color: white;
+    float: right;
 }
 
 .heading {
@@ -34,3 +49,32 @@ p {
     letter-spacing: -0.04em;
     margin-top: 30px;
 }
+
+.page-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #326dee;
+    border: 0px solid blue;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+    button.active {
+        background-color: gray;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid none;
+        border-radius: 3rem;
+        color: #fff;
+    }
+
+.page-content {
+    display: none;
+}
+
+    .page-content.active {
+        display: block;
+    }

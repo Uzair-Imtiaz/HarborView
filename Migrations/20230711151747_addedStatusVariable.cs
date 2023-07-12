@@ -5,25 +5,25 @@
 namespace HarborView_Inn.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedColInDining : Migration
+    public partial class addedStatusVariable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "bookedTable",
-                table: "DiningTable",
-                type: "int",
+            migrationBuilder.AddColumn<string>(
+                name: "status",
+                table: "Reservation",
+                type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: "");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "bookedTable",
-                table: "DiningTable");
+                name: "status",
+                table: "Reservation");
         }
     }
 }

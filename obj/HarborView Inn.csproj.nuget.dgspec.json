@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\syedn\\Desktop\\Web Proj\\HarborView\\HarborView Inn.csproj": {}
+    "C:\\Users\\uzair\\OneDrive\\Desktop\\Semester 6\\Web\\HarborView Inn\\HarborView Inn\\HarborView Inn.csproj": {}
   },
   "projects": {
-    "C:\\Users\\syedn\\Desktop\\Web Proj\\HarborView\\HarborView Inn.csproj": {
+    "C:\\Users\\uzair\\OneDrive\\Desktop\\Semester 6\\Web\\HarborView Inn\\HarborView Inn\\HarborView Inn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\syedn\\Desktop\\Web Proj\\HarborView\\HarborView Inn.csproj",
+        "projectUniqueName": "C:\\Users\\uzair\\OneDrive\\Desktop\\Semester 6\\Web\\HarborView Inn\\HarborView Inn\\HarborView Inn.csproj",
         "projectName": "HarborView Inn",
-        "projectPath": "C:\\Users\\syedn\\Desktop\\Web Proj\\HarborView\\HarborView Inn.csproj",
-        "packagesPath": "C:\\Users\\syedn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\syedn\\Desktop\\Web Proj\\HarborView\\obj\\",
+        "projectPath": "C:\\Users\\uzair\\OneDrive\\Desktop\\Semester 6\\Web\\HarborView Inn\\HarborView Inn\\HarborView Inn.csproj",
+        "packagesPath": "C:\\Users\\uzair\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uzair\\OneDrive\\Desktop\\Semester 6\\Web\\HarborView Inn\\HarborView Inn\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\syedn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\uzair\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -48,7 +52,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -59,6 +63,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[110.2.0, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [
@@ -67,8 +75,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
